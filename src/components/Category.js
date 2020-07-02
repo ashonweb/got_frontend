@@ -201,9 +201,10 @@ class Category extends Component {
                         </ClickAwayListener>
                     </Collapse>
                 </div>
-                <Divider className="divider_category" orientation="vertical" flexItem />
+                {/* <Divider className="divider_category" orientation="vertical" flexItem />
+                <NavLink to="/comments" className="buttonclasscast" activeStyle={{ color: "#1890ff" }}>Comments</NavLink> */}
 
-                <button class="buttonclasscast" value="The Great Houses in Westero's"><b>Comments</b></button>
+                {/* <button class="buttonclasscast" value="The Great Houses in Westero's"><b>Comments</b></button> */}
 
 
             </div>

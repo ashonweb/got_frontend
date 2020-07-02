@@ -54,3 +54,7 @@ background-repeat: no-repeat; */
   width: 100% !important; 
   /* height: 100% !important; */
 }
+.ReactModal__Overlay {
+  height: 100%;
+  background-color: rgba(18, 17, 17, 0.75) !important;
+}

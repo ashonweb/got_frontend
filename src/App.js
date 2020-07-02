@@ -124,6 +124,7 @@ const Routes = () => {
         </>
       )}
       />
+       
        <Route path='/whitewalkers' render={() => (
         <>
            <NavLink to="/home" className="header">Game Of Thrones</NavLink>
