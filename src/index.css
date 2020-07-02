@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 40px !important;
+  color:white !important;
+}
+.MuiBackdrop-root{
+ background: black !important; 
+/* background-image: url(./assests/housebaelish.jpg);
+background-size: cover;
+background-repeat: no-repeat; */
+}
+.MuiDialog-paperWidthSm{
+  color: white !important ;
+  background:  linear-gradient(75deg, black, transparent) !important;
+  /* max-width: max-content !important; */
+  height: 100vh !important;
+/*width: 64%;
+    height: 90%;
+  /* background-image: url('./assests/housemormont.jpg'); */
+}
+.MuiInputBase-root {
+  width: 95% !important;
+}
+.MuiInputBase-input  {
+  width: 500px !important;
+  border-color: white !important;
+  color : white !important;
+  font-size: 15px;
+    font-weight: bold
+}
+
+.MuiInputLabel-outlined {
+  font-size: 20px !important;
+  color: rgb(240, 98, 98) !important;
+}
+.MuiOutlinedInput-notchedOutline{
+  border-color: white !important;
+}
+.MuiDialog-paperFullScreen {
+  width: 100% !important; 
+  /* height: 100% !important; */
+}

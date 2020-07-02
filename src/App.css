@@ -1,0 +1,1456 @@
+
+.App {
+  text-align: center;
+}
+
+.per{
+  height: 160px !important;
+  width: 100px !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  /* background-image:linear-gradient(
+     
+    rgba(75, 71, 54, -0.56),
+    rgba(89, 76, 53, 0.40)
+  ),url(./assests/gotmap1.jpg); */
+  background-image:url(./assests/gotmap1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white !important;
+}
+
+.App-background {
+  background-image:url(./assests/gotmap2.jpg);
+} 
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  min-height: 100vh;
+    /* border: 1px solid transparent; */
+    background-color: black;
+    background: linear-gradient(135deg, black, transparent);
+ 
+}
+.header {
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 10px 0 0 0 !important;
+  display: block;
+    font-size: 33px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.maincontent {
+  /* margin: 10px 30px; */
+  margin: 0px 30px;
+
+
+}
+.plot {
+font-family: none
+}
+
+.mainpagecontent {
+  /* justify-content: space-between !important; */
+  display: block !important;
+  /* background: linear-gradient(45deg,silver,transparent); */
+  width: auto !important;
+  margin: 0 !important;
+  /* padding: 0 15px; */
+  background-color:white;
+}
+.exploreseasons {
+   width: auto !important;
+  margin: 0 !important; 
+  display: flex;
+  width: -webkit-fill-available !important;
+  border: solid 1px transparent;
+
+}
+
+  .gothouses {
+    margin: 10px 0px  !important;
+    background-color: blue;
+    height: 400px;
+  }
+
+ 
+
+  .gotlannisters {
+    color: slategray;
+    /* text-align: center; */
+    max-width: 24.55% !important;
+    /* margin: 10px 0px  !important; */
+    /* background-color: blue; */
+    /* height: 400px; */
+    /* background-color: white; */
+    /* background: linear-gradient(to left, rgb(66, 66, 66)	 50%, white 50%); */
+
+  }
+/* 
+  .houses {
+         background: linear-gradient(to left, rgb(19, 18, 25)	 50%, white 50%); 
+         height: 350px;
+         max-width: 48% !important;
+         margin: 0 10px 10px!important;
+         position: relative;
+         
+
+  } */
+
+  .Lannister {
+    background: linear-gradient(to left, #64000d	 50%, white 50%);
+    height: 350px;
+    max-width: 49% !important;
+    margin: 0 0px 10px!important;
+    position: relative; 
+
+  }
+  .Stark{
+    background: linear-gradient(to left, rgb(19, 18, 25)	 50%, white 50%); 
+    /* background: linear-gradient(to left, #ADEFF9	 50%, white 50%);  */
+
+    height: 350px;
+    max-width: 49% !important;
+    margin: 0 0px 10px!important;
+    position: relative;
+  }
+.Targaryen {
+  background: linear-gradient(to left, 	#a70e0e	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+    margin: 0 0px 10px!important;
+  position: relative;
+} .Baratheon {
+  background: linear-gradient(to left, #d4a707	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+    margin: 0 0px 10px!important;
+  position: relative;
+} .Martell {
+  background: linear-gradient(to left, #a95800	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+    margin: 0 0px 10px!important;
+  position: relative;
+
+} .Tyrell {
+  background: linear-gradient(to left, #044a04	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+    margin: 0 0px 10px!important;
+  position: relative;
+
+}
+.GreyJoy {
+  background: linear-gradient(to left, #3f3d3b	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+
+}.Tully {
+  background: linear-gradient(to left, #181a52	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+
+}.Arryn {
+  background: linear-gradient(to left, #033754	 50%, white 50%); 
+  height: 350px;
+  max-width: 49% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+
+}
+
+.fadedialog{
+  background: linear-gradient(to left, #033754	 50%, red 50%) !important; 
+
+}
+  .exploreseasons .gotlannisters:hover {
+    border-bottom: 2px solid black;
+  }
+
+  .buttonclass {
+    border: 1px solid;
+    /* margin: 10px 0; */
+    cursor: pointer;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+     border-left: none; 
+    background: none;
+    border: none;
+    /* width: -webkit-fill-available; */
+    /* border-image: linear-gradient(180deg,hsla(0,0%,0%,0) 0,#ffffff 51%,hsla(0,0%,0%,0)); */
+    /* border-image-slice: 1; */
+   
+}
+.buttonclass:focus{
+  outline: none;
+}
+.buttonclass:hover{
+  color:#1890ff;
+  transition:         color 1s
+  }
+
+.buttonclasscast{
+  text-decoration: none;
+  font-weight: bold !important;
+    font-size: 15px;
+  /* width: -webkit-fill-available; */
+  /* margin: 10px 0px; */
+    /* margin-top: 35px; */
+    cursor: pointer;
+    border: none !important;
+     /* border-left: none; 
+     border-top: none;
+     border-bottom: none; */
+    border-radius: 3px;
+    color: #fff;
+    /* font-size: 18px; */
+    background: none;
+    /* border-image: linear-gradient(180deg,hsla(0,0%,0%,0) 0,#ffffff 50%,hsla(0,0%,0%,0));
+    border-image-slice: 1;
+/*  */
+    /* background-image: -webkit-linear-gradient(bottom,#a70c22,#ed4c5b);
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.85),#edd24c);  */
+}
+.buttonclasscast:focus{
+outline:none
+}
+.buttonclasscast:hover{
+  color:#1890ff;
+  transition:         color 1s
+  }
+
+.categorydivision{
+  display: flex;
+  justify-content: space-between !important;
+  height: 30px;
+    margin: 10px 0;
+    padding: 10px 0;
+
+  /* justify-content: space-around; */
+  box-shadow: 0 6px 3px -6px white;
+
+}
+
+.carosal {
+  width: 650px;
+    height: 550px;
+    /* left: 50%;
+    top: 60%; */
+    /* margin-left: -100px; */
+    /* margin-top: -100px; */
+    /* background-color: yellow; */
+    margin: 0 auto;
+}
+
+.label {
+  font-size: small;
+  font-family: sans-serif;
+  margin: 1px 0;
+}
+
+.root {
+  flex-grow: 1;
+  margin: 15px 0 ;
+}
+
+
+.paper {
+  padding: 1px,
+  
+}
+
+.divider {
+  margin: 0 3px !important;
+}
+
+.seasons {
+  position: relative;
+  color: lightgray;
+    font-size: 80px;
+    margin: 0;
+    font-family: auto;
+    white-space: 0px;
+    size: 10px;
+    letter-spacing: -6px;
+}
+
+.seasons_name{
+  position: absolute;
+  margin: 0;
+  top: 34%;
+  font-size: 30px;
+  font-family: fantasy;
+  color:#404040;
+  left: 22px;
+  letter-spacing: 0px;
+  /* background: linear-gradient(45deg, black, transparent); */
+  /* z-index: 1; */
+  font-weight: lighter;
+}
+
+.des {
+  height: 140px;
+  margin: 0;
+    font-size: small;
+    /* text-shadow: 0px 1px 2px rgba(0,0,0,0.3); */
+}
+
+.epi {
+  margin: 18px 0;
+  font-size: small;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+.findoutmore {
+  display: flex;
+  justify-content: space-between;
+}
+.findbutton {
+  background-color: black;
+  font-size: small;
+  color: white;
+  padding: 15px 10px;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arrow {
+  margin: 0 5px !important;
+}
+
+.container {
+  width: auto !important;
+  margin: 15px 0 !important;
+  justify-content: space-between !important
+}
+
+.container1 {
+  width: auto !important;
+  margin: 15px 0 !important;
+  justify-content: space-evenly !important
+}
+
+h3
+{ 
+  /* margin: 0 !important;
+  position: absolute;
+  top: 62%;
+  font-size: 130px;
+  color: #F0F0F0 !important;margin: 0;
+  font-family: serif;
+  font-weight: bold !important;
+  width: 22% !important;
+    overflow: hidden; */
+    margin: 0 !important;
+    position: absolute;
+    top: 39%;
+   
+    width: 48% !important;
+    font-size: 130px;
+    color: #F0F0F0 !important;
+    margin: 0;
+    font-family: serif;
+    font-weight: bold !important;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.house_sworn_header {
+  margin: 0 !important;
+  position: absolute;
+  top: 39%;
+ 
+  width: 90% !important;
+  font-size: 130px;
+  color: #F0F0F0 !important;
+  margin: 0;
+  font-family: serif;
+  font-weight: bold !important;
+  overflow: hidden;
+  z-index:-10 !important;
+}
+.contenthouse
+{ 
+  /* width: 13%;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  letter-spacing: 2px; */
+  margin: 10px 0;
+  width: 38%;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    
+    letter-spacing: 2px;
+    
+  
+}
+.contenthouse2
+{ 
+  width: 13%;
+  position: absolute;
+  top: 40%;
+  left: 83%;
+  /* left: 0; */
+  /* width: 100%; */
+  /* font-size: 130px; */
+  letter-spacing: 2px;
+  /* left: 0; */
+  /* width: 100%; */
+  /* font-size: 130px; */
+  /* color: #F0F0F0 !important;margin: 0;
+  font-family: serif;
+  font-weight: bold !important;
+  width: 22% !important;
+    overflow: hidden; */
+}
+.house_name {
+  color: 		#A9A9A9;
+  margin: 0 !important;
+  font-size: 18px;
+  
+
+}
+
+
+.house_exact_name {
+  margin: 0 !important;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: bold;
+  font-size: 46px;
+  position: relative;
+  /* bottom: 20px; */
+}
+.shouse_exact_name {
+  margin: 0 !important;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: bold;
+  font-size: 46px;
+  position: relative;
+  /* bottom: 20px; */
+}
+.fade {
+  transition:  10s;
+}
+
+.react-reveal {
+  animation-duration: 1000ms;
+    animation-delay: 15ms !important;
+}
+.houses_des{
+  font-size: 9px;
+    position: relative;
+    /* bottom: 35px; */
+    margin: 0;
+    height: 172px;
+}
+
+.readmore {
+  margin-top: 15px !important;
+  position: relative;
+  /* bottom: 32px; */
+  background-color: white;
+  font-size: small;
+  color: black;
+  padding: 13px 11px;
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.houses_image {
+ 
+    text-align: center;
+    height: 64%;
+    width: 30%;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto; display: flex;align-items: center ;left:-8%;position:relative;z-index:1
+
+}
+
+.categorydivision_d {
+  display: none
+}
+.drawer {
+  display: none
+}
+
+.appbar {
+  background: none !important;
+} 
+
+.swornhouses {
+  height: 200px;
+  width: 200px;
+}
+.grid_container_swornhouses {
+  width: auto !important;
+  margin:0 !important;
+  z-index: 1 !important
+}
+.swornhouses_des {
+  position: relative;
+  /* top:-20%; */
+  height: 200px;
+  margin:15px;
+  width: 200px;
+  float: left;
+}
+.swornhouses_des:hover{
+  cursor: pointer !important;
+
+}.PrivateTabScrollButton {
+color:red !important;
+}
+
+.iconstab {
+  opacity: 1.7 !important;
+}
+
+.contentdialog {
+  overflow:hidden !important;
+}
+
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  margin: 0 20px;
+}
+
+.subcontent1{
+  width: 50%;
+  position: relative;
+    top: -32px;
+
+}
+.shouses_des{
+width: 100%;
+font-size: inherit;
+font-family: cursive;
+}
+.subcontent2{
+  width: 50%;
+  position: absolute;
+  left: 23%;
+  top: -100%;
+} 
+
+  .inputmargin {
+    color: rgb(68,68,68);
+    width: 45% !important;
+    margin-right: 18px !important
+   
+}
+.inputmargin_walk{
+  width: 100% !important;
+margin: 15px 0 !important;
+}
+.closedialog{
+  /* border: 1px solid red; 
+    width: 3%;
+    text-align: center;
+    position: relative;
+    left: 92%;
+    top: 1%; */
+
+    width: 0px;
+    height: 44px;
+    position: relative;
+    left: 95%;
+    color:rgb(240, 98, 98) !important;
+    /* animation: skew .1s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    cursor: pointer;
+    color:rgb(240, 98, 98); */
+   
+    
+}
+
+/* .closedialog:hover{
+  animation: skew .1s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    cursor: pointer;
+    color:rgb(240, 98, 98);
+} */
+
+/* .othercontent {
+  display: flex;
+  justify-content: start;
+} */
+
+.charcterclassindialog
+{
+  border-radius: 50%;
+  width: 130px !important;
+  height: 130px;
+  display: block;
+  margin: auto !important;
+}
+
+.charcterclassindialog:hover{
+  cursor: pointer;
+}
+
+.charactername{
+  text-align: center;
+  font-size: larger;
+    font-weight: bold;
+    margin: 9px;
+}
+
+.charactername_nobelfamily {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 5px;
+}
+.charactername_nobelfamily:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.locname{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px;
+  
+}
+
+.realname{
+  text-align: center;
+  margin:0
+}
+.realname_nobelfamily{
+  text-align: center;
+  margin:0;
+  font-size: 14px;
+  font-weight: 100;
+}
+.famouscharacter{
+  text-align: center;
+}
+
+
+  @keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+
+
+  .bn{
+    max-width: max-content !important;
+  }
+
+  .main_content_stark {
+    height: 200px;
+    width: 100% !important;
+    background: rgb(19, 18, 25) !important;
+}
+.triviadetails{
+  background:linear-gradient(45deg, black, transparent); 
+  /* background: linear-gradient(to left, #ADEFF9	 50%, white 50%);  */
+
+  height: 400px;
+  max-width: 49% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+}
+.triviadetails_nodata {
+  background:linear-gradient(45deg, black, transparent); 
+ 
+}
+.trivia_house
+{
+  margin: 0 !important;
+    position: absolute;
+    top: 39%;
+    /* width: 48% !important; */
+    width: 100% !important;
+    font-size: 130px;
+    color: #171717 !important;
+    font-family: serif;
+    font-weight: bold !important;
+    overflow: hidden;
+    z-index: 0;
+}
+.triviat{
+  margin: 0 !important;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    /* bottom: 20px; */
+    font-family: serif;
+}
+.triviad{
+    /* text-align: center; */
+    /* margin: 0; */
+    font-size: 15px;
+    /* font-weight: 100; */
+
+}
+
+.Starkdetails_noble{
+  height: 200px;
+    width: 100% !important;
+    background: rgb(19, 18, 25) !important;
+}
+.Lannisterdetails_noble { height: 200px;
+  width: 100% !important;
+  background: #64000d !important;
+
+}
+.Baratheondetails_noble{ height: 200px;
+  width: 100% !important;
+  background: #d4a707!important;
+}
+.Targaryendetails_noble{ height: 200px;
+  width: 100% !important;
+  background: #a70e0e !important;
+}
+.Tullydetails_noble{ height: 200px;
+  width: 100% !important;
+  background: #181a52!important;
+}
+.Arryndetails_noble{ height: 200px;
+  width: 100% !important;
+  background:#033754 !important;
+}
+.GreyJoydetails_noble{ height: 200px;
+  width: 100% !important;
+  background: #3f3d3b !important;
+}
+.Martelldetails_noble{ height: 200px;
+  width: 100% !important;
+  background: #a95800 !important;
+}
+.Tyrelldetails_noble{ height: 200px;
+  width: 100% !important;
+  background: #044a04 !important;
+}
+
+
+
+
+.main_content_category{
+height: 45px;
+    /* width: 100%; */
+    background: white;
+    display: flex;
+    border: none;
+    width: auto !important;
+    margin: 0 !important;
+    
+}
+
+.main_content_category_item {
+  padding: 0 !important;
+  text-align: center;
+}
+/* .main_content_category_item:hover {
+  background: black ;
+  color: white;
+} */
+
+.quotes{
+  text-align: center;
+    margin: 10px;
+    /* font-family: auto; */
+    font-weight: 100;
+    font-family: 'Dancing Script', cursive !important;
+}
+.quotesauthor{
+  text-align: center;
+    margin: 10px;
+    font-family: auto;
+    font-family: 'Dancing Script', cursive !important;
+
+}
+
+.main_content_stark_logo{
+  position: absolute;
+    top: 22%;
+  height: 100px !important;
+    width: 100px !important;
+    border-radius: 50% !important;
+    margin: 0 50px !important;
+    z-index: 1 !important;
+}
+
+
+.button_housedetails{
+  font-weight: 400;
+    font-size: 15px;
+    /* width: -webkit-fill-available; */
+    /* margin: 10px 45px; */
+    /* margin-top: 35px; */
+    cursor: pointer;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 3px;
+    background: none;
+    border-image: linear-gradient(180deg,hsla(0,0%,0%,0) 0,#ffffff 50%,hsla(0,0%,0%,0));
+    border-image-slice: 1;
+    text-decoration: none;
+    color: black ;
+}
+
+.button_housedetails:focus{
+  outline: none;
+  text-decoration: none;
+}
+.button_housedetails:hover{
+  color:#1890ff;
+  transition:         color ;
+  text-decoration: none;
+  /* background-color: black; */
+  }
+
+.directed{
+  font-size: 11px;
+    font-family: cursive;
+    
+}
+.directedby{
+  padding: 0 12px !important;
+  font-size: 11px;
+  /* font-family: cursive; */
+  font-family: "jost";
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.directeditem{
+  font-size: 11px;
+    font-family: cursive;
+    font-family: "jost";
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.history{
+  
+  /* height: 100vh !important; */
+}
+.history_content{
+  font-size: large;
+    font-family: initial;
+}
+
+.history_container{
+  width: auto !important;
+  /* background: black; */
+  /* background:linear-gradient(rgba(14, 1, 1, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/winterfell.jpg'); */
+    margin: 10px 0 !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  margin: 10px 0 !important;
+}
+
+.Family_container{
+  width: auto !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background: linear-gradient(186deg, black, transparent);
+  margin: 0 !important;
+}
+
+.locationd{
+  height: 165px;
+    /* width: 164px; */
+    display: block;
+    margin: auto !important;
+
+}
+
+/* .item_history{
+  padding: 0 !important;
+} */
+
+.crew_container{
+ 
+    width: auto !important;
+    /* background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background: linear-gradient(2deg, black, transparent); */
+    margin: 0 !important;
+
+}
+
+.dialogcharacter{
+  background: white;
+  width: auto;
+  height: 100vh;
+}
+
+.char_des{
+  font-size: inherit;
+}
+.char_des_walker{
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.walkerhistory{
+  
+    margin: 0 !important;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    /* bottom: 20px; */
+
+}
+
+.locheader{
+  
+  margin: 10px 0 !important;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  /* bottom: 20px; */
+}
+.beyondimages{
+  position: relative;
+    /* top: -20%; */
+    height: 230px;
+    /* margin: 15px; */
+    width: 230px;
+    /* float: left; */
+    border-radius: 50%;
+    margin: 0 auto !important;
+    object-fit: cover
+
+}
+
+.closedialog_char {
+  width: 0px;
+  height: 24px;
+  top: 0px;
+  /* position: absolute !important; */
+  left: 97%;
+  color: rgb(240, 98, 98) !important;
+  cursor: pointer !important;
+}
+.icon{
+  color: rgb(240, 98, 98) !important;
+
+}
+.nodata {
+  text-align: center;
+  height: 260px;
+}
+
+.friendtype{
+  font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+}
+.frienddes{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+.beyondlistdropdown {
+  position: absolute !important;
+  z-index: 1;
+  background-color: white;
+  width: 200px;
+}
+.beyondlink {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+.list{
+  padding: 0 !important;
+}
+
+.divider_category{
+  background-color: white !important;
+   border-image: linear-gradient(180deg,hsla(0,0%,0%,0) 0,#ffffff 51%,hsla(0,0%,0%,0)); 
+     border-image-slice: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .categorydivision {
+    display: none;
+  }
+  .carosal{
+    width: 300px ;
+    height: 440px;
+  }
+  .mainpagecontent {
+    display: block !important;
+    background-color: transparent;
+  }
+  .exploreseasons {
+    display: block
+  }
+  .gotlannisters {
+    max-width: 100% !important;
+    flex-basis: auto !important;
+    background-color: none;
+  }
+  .label {
+    margin: 5px 0;
+  }
+
+  .houses {
+    max-width: 100% !important;
+    flex-basis: auto !important;
+    margin: 10px 0 !important
+  }
+
+
+
+  .textfield_white{
+    width: auto !important;
+  }
+  .houses_image {
+    text-align: center;
+    width: 30%;
+    height: 91px;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    left: 0;
+}
+.contenthouse {
+  margin: 10px 10px;
+       /* margin: 10px 0; */
+    width: auto;
+    position: absolute;
+    top: 27%;
+    /* left: 0; */
+    left: 0 !important; 
+    letter-spacing: 2px;
+    color: indianred;
+}
+
+
+.contenthouse1 {
+  margin: 10px 10px;
+       /* margin: 10px 0; */
+    width: auto;
+    position: absolute;
+    top: 7%;
+    /* left: 0; */
+    left: 0 !important; 
+    letter-spacing: 2px;
+    color: indianred;
+    background-color: blueviolet !important;
+}
+
+.house_exact_name {
+  margin: 0 !important;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 46px;
+  position: relative;
+  color: indianred;
+
+}
+.container {
+  display: block !important;
+}
+.readmore {
+   margin-top: 0px !important; 
+  position: relative;
+  /* bottom: 32px; */
+  background-color: white;
+  font-size: small;
+  color: black;
+  padding: 13px 11px;
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+}
+.findbutton {
+  background-color: darkred;
+}
+.categorydivision_d {
+  width: 250px;;
+}
+.buttonclasscast {
+  
+
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  width: -webkit-fill-available;
+  margin:  0px;
+  /* margin-top: 35px; */
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: dimgray;
+  /* font-size: 18px; */
+  background: none;
+  
+}
+.categorydivision_d {
+  display: block
+}
+.mdrawer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.icon {
+  font-size: 40px !important;
+}
+/* .header {
+  text-align: right;
+} */
+.drawer {
+  display: inline;
+  color: red;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+}
+.iconmenu {
+  font-size: 45px;
+    color: white;
+}
+.houses_image_d{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.Stark {
+  background: linear-gradient(to left, rgb(19, 18, 25) 50%, white 50%);
+  /* background: linear-gradient(to left, #ADEFF9 50%, white 50%); */
+  height: 380px;
+  max-width: 100% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+  width: auto !important;
+}
+
+
+.Lannister {
+  background: linear-gradient(to left, #64000d	 50%, white 50%);
+  height: 380px;
+  max-width: 100% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+  width: auto !important;
+
+}
+
+.Targaryen {
+background: linear-gradient(to left, 	#a70e0e	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+} 
+.Baratheon {
+background: linear-gradient(to left, #d4a707	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+}
+ .Martell {
+background: linear-gradient(to left, #a95800	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+
+}
+ .Tyrell {
+background: linear-gradient(to left, #044a04	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+
+}
+.GreyJoy {
+background: linear-gradient(to left, #3f3d3b	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+
+}.Tully {
+background: linear-gradient(to left, #181a52	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+
+}.Arryn {
+background: linear-gradient(to left, #033754	 50%, white 50%); 
+height: 380px;
+max-width: 100% !important;
+margin: 0 0px 10px!important;
+position: relative;
+width: auto !important;
+
+}
+.houses_des {
+  font-size: 9px;
+  position: relative;
+  /* bottom: 35px; */
+  margin: 0;
+  height: 130px;
+}
+.triviadetails {
+  background: linear-gradient(45deg, black, transparent);
+  /* background: linear-gradient(to left, #ADEFF9 50%, white 50%); */
+  height: auto !important;
+  max-width: 100% !important;
+  margin: 0 0px 10px!important;
+  position: relative;
+}
+
+.main_drawer{
+  /* background-color: #F5F5F4 !important */
+}
+}
