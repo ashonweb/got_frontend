@@ -360,6 +360,10 @@ outline:none
 .arrow {
   margin: 0 5px !important;
 }
+.arrow_back{
+  width: 12px !important;
+  height: auto !important;
+}
 
 .container {
   width: auto !important;

@@ -54,6 +54,28 @@ class CrewMembers extends Component {
                 }, () => {
                      console.log(this.state.castdetails, "castdetails")
                     // console.log(this.state.castdetails[0].firstseen, "name")
+
+                   
+                    //   const{firstseen,lastseen,father,mother,spouse,siblings,children, religin,culture,status,death,alias,titles,description,origin} = this.state.castdetails
+                    
+                    // this.setState({
+                    //     firstseen: firstseen,
+                    //     lastseen: lastseen,
+                    //     father: father,
+                    //     mother: mother,
+                    //     spouse: spouse,
+                    //     sib: siblings,
+                    //     childern: children,
+                    //     religion: religin,
+                    //     culture:culture,
+                    //     status: status,
+                    //     death: death,
+                    //     alias: alias,
+                    //     title: titles,
+                    //     des: description,
+                    //     origin: origin,
+                    // })
+
                     this.setState({
                         firstseen: this.state.castdetails[0].firstseen,
                         lastseen: this.state.castdetails[0].lastseen,

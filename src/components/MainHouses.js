@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 
 import SwipeQuotedHouse from './SwipeQuotedHouse';
 import { Link } from 'react-router-dom';
+import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp';
 
 
 
@@ -80,6 +81,7 @@ class MainHouses extends Component {
             });
 
         const { q, qa, logo, house } = this.state.data
+        console.log(q,qa,logo,house)
         this.setState({
             quotes: q,
             quotesa: qa,
@@ -131,6 +133,7 @@ class MainHouses extends Component {
 
     render() {
         const { house, quotes, quotesa } = this.state;
+        console.log(  this.state.house,   this.state.quotes,   this.state.quotesa      ,"mainhouses.js"      )
         // const { activeStep } = this.state;
         // console.log(this.state.place, "q")
         // const houseBackground = `http://localhost:3009/${place}`;
@@ -185,8 +188,12 @@ class MainHouses extends Component {
 
                         </Grid>
                         <Grid className="main_content_category_item" item xs={2}>
+                        <Button  variant="contained"
+                        color="secondary" startIcon={<ArrowBackIosSharpIcon  className="arrow_back" />}
+ component={Link} to="/Noble_houses" style={{ color: 'red', textDecoration: 'none' }} class="button_housedetails" value="The Great Houses in Westero's" activeStyle={{ background: "green", textDecoration: 'none' }} > <b>Back</b></Button>
+
                             {/* <Button component={Link} to="/behind" class="button_housedetails" value="The Great Houses in Westero's" > <b>Behind Scenes</b></Button> */}
-                            <NavLink to="/behind" style={{ color: 'black', textDecoration: 'none' }} activeStyle={{ background: "green", textDecoration: 'none' }} >behin</NavLink>
+                            {/* <NavLink to="/Noble_houses" style={{ color: 'red', textDecoration: 'none' }} activeStyle={{textDecoration: 'none' }} >back</NavLink> */}
                             {/* <button class="button_housedetails" value="The Great Houses in Westero's"><b> Behind Scenes</b></button> */}
 
                         </Grid>

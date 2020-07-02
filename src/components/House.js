@@ -21,6 +21,7 @@ class House extends Component {
         this.props.history.push('/Noble_houses/House/' + this.props.data.house)
     }
     render() {
+        console.log(this.props.data.logo,"logo")
         return (
             <>
                 <Grid item xs={6} className={this.props.data.house}>
