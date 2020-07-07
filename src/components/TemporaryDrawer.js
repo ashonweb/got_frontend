@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 
 import { withRouter } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import lannister from '../assests/houses.jpg';
@@ -32,7 +33,7 @@ class TemporaryDrawer extends React.Component {
             open: !this.state.open
         }, () => {
             if (this.state.open === true) {
-                this.props.history.push('/houses');
+                this.props.history.push('/Noble_houses');
 
             }
             else {
@@ -68,7 +69,7 @@ class TemporaryDrawer extends React.Component {
 
                 <div className="mdrawer">
                 <img src={crew} alt="no stark"  className="houses_image_d" />
-                    <button to="/houses" class="buttonclasscast" value="Cast and Crew"><b> Cast and Crew</b></button>
+                <NavLink to="/crewandcast" className="buttonclasscast" activeStyle={{ color: "#1890ff" }}>  Cast & Crew</NavLink>
                 </div>
                 <Divider />
                 <div className="mdrawer">

@@ -5,7 +5,8 @@ import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 
 import CrewMembers from './CrewMembers';
-
+const API_URL = process.env.REACT_APP_API_URL;
+console.log(API_URL,"opo");
 
 
 
@@ -25,7 +26,9 @@ class CrewAndCast extends Component {
         // let location = window.location.pathname.split('/');
         // let lastpath = location[location.length - 1]
         // console.log(lastpath, "last")
-        await fetch('http://localhost:3009/characters/', {
+        // await fetch('http://localhost:3009/characters/', {
+            await fetch(`${API_URL}characters/`, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

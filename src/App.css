@@ -1221,6 +1221,62 @@ height: 45px;
 
 
 @media only screen and (max-width: 600px) {
+  .shouse_exact_name {
+    margin: 0 !important;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    /* bottom: 20px; */
+}
+  .swornhouses_des {
+    position: relative; 
+    /* top: -20%; */
+     height: 200px;
+     margin: 0px; 
+     width: 200px; 
+     float: none;
+}
+  .grid_container_swornhouses{
+    display: block !important
+  }
+  .closedialog_char {
+    width: 0px;
+    height: 24px;
+    top: 0px;
+    /* position: absolute !important; */
+    left: 90%;
+    color: rgb(240, 98, 98) !important;
+    cursor: pointer !important;
+    margin: 10px 0px !important;
+  }
+  .icon{
+    color: rgb(240, 98, 98) !important;
+  
+  }
+  .griditem{
+    padding: 0 !important;
+  }
+  .charactername_nobelfamily{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 5px;
+  }
+  .charcterclassindialog {
+    border-radius: 50%;
+    width: 100px !important;
+    height: 100px;
+    display: block;
+    margin: auto !important
+  }
+  .realname_nobelfamily{
+    text-align: center;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 100;
+  }
   .categorydivision {
     display: none;
   }
@@ -1245,10 +1301,16 @@ height: 45px;
   }
 
   .houses {
-    max-width: 100% !important;
-    flex-basis: auto !important;
-    margin: 10px 0 !important
+    max-width: none !important;
+    /* flex-basis: auto !important;
+    margin: 10px 0 !important */
   }
+  .inputmargin {
+    color: rgb(68,68,68);
+    width: 100% !important;
+    /* width: 45% !important; */
+    margin-right: 18px !important;
+}
 
 
 

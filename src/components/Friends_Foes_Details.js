@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Grid, } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 class Friends_Foes_Details extends Component {
@@ -16,7 +17,9 @@ class Friends_Foes_Details extends Component {
             <>
                 <Grid item xs={12} >
                     <Fade className="react-reveal" top >
-                        <img src={"http://localhost:3009/" + this.props.data.houses_logo_of_type} alt="no stark" className="swornhouses_des" />
+                    <img src={`${API_URL}` + this.props.data.houses_logo_of_type} alt="no stark" className="swornhouses_des" />
+
+                        {/* <img src={"http://localhost:3009/" + this.props.data.houses_logo_of_type} alt="no stark" className="swornhouses_des" /> */}
                     </Fade>
                     <Fade right>
                         {/* <p className="house_name">House</p> */}

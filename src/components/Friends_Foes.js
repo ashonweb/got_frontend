@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import FamilyMembers from './FamilyMembers';
 import CrewMembers from './CrewMembers';
 import Friends_Foes_Details from './Friends_Foes_Details';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 class Friends_Foes extends Component {
@@ -23,7 +24,9 @@ class Friends_Foes extends Component {
         let location = window.location.pathname.split('/');
         let lastpath = location[location.length - 1]
         console.log(lastpath, "last")
-        await fetch('http://localhost:3009/friendsfoes/?house=' + lastpath, {
+        // await fetch('http://localhost:3009/friendsfoes/?house=' + lastpath, {
+            await fetch(`${API_URL}friendsfoes/?house=` + lastpath, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

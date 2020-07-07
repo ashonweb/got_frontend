@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import SwipeQuotedHouse from './SwipeQuotedHouse';
 import { Link } from 'react-router-dom';
 import ArrowBackIosSharpIcon from '@material-ui/icons/ArrowBackIosSharp';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 
@@ -63,7 +64,9 @@ class MainHouses extends Component {
             }
         })
        
-        await fetch('http://localhost:3009/posts/?house=' + lastpath, {
+        // await fetch('http://localhost:3009/posts/?house=' + lastpath, {
+            await fetch(`${API_URL}posts/?house=` + lastpath, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -150,7 +153,9 @@ class MainHouses extends Component {
                     {
 
                     }
-                    <img className="main_content_stark_logo" src={"http://localhost:3009/" + this.state.logo} alt="no" />
+                    <img className="main_content_stark_logo" src={`${API_URL}` + this.state.logo} alt="no" />
+
+                    {/* <img className="main_content_stark_logo" src={"http://localhost:3009/" + this.state.logo} alt="no" /> */}
                 </div>
                 {/* <div className="main_content_category">
                 <button class="button_housedetails"value="The Great Houses in Westero's"><b>Family & House Hold</b></button>

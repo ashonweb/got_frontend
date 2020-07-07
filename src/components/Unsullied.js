@@ -4,6 +4,7 @@ import { Grid, Divider, } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 class Unsullied extends Component {
@@ -32,7 +33,9 @@ class Unsullied extends Component {
     async componentDidMount() {
 
         console.log("here inside handle characters")
-        await fetch('http://localhost:3009/walkers?type=unsul', {
+        // await fetch('http://localhost:3009/walkers?type=unsul', {
+            await fetch(`${API_URL}walkers?type=unsul`, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -96,7 +99,9 @@ class Unsullied extends Component {
                     </Grid>
                     <Grid item xs={3} >
                         <Fade className="react-reveal" left >
-                            <img src={"http://localhost:3009/" + whitewalker} alt="no walker" className="beyondimages" />
+                        <img src={`${API_URL}` + whitewalker} alt="no walker" className="beyondimages" />
+
+                            {/* <img src={"http://localhost:3009/" + whitewalker} alt="no walker" className="beyondimages" /> */}
                         </Fade>
 
                         <TextField className="inputmargin_walk"

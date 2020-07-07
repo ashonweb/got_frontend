@@ -13,6 +13,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import TextField from '@material-ui/core/TextField';
 import Characters from './Characters';
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 function Transition(props) {
     return <Slide className="slide"direction="left" {...props} />;
@@ -53,7 +54,9 @@ class SwornHouse extends Component {
 
         console.log(this.props.swornhousedata.house, "this.props.swornhousedata.house")
 
-        fetch('http://localhost:3009/characters?house=' + this.props.swornhousedata.house, {
+        // fetch('http://localhost:3009/characters?house=' + this.props.swornhousedata.house, {
+            fetch(`${API_URL}characters?house=` + this.props.swornhousedata.house, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -86,7 +89,8 @@ class SwornHouse extends Component {
             <>
                 <Tab onClick={this.handleTab} className="iconstab" icon={
                     <Fade className="react-reveal" top >
-                        <img src={"http://localhost:3009/" + this.props.swornhousedata.logo} alt="no stark" className="swornhouses" />
+                        <img src={`${API_URL}` + this.props.swornhousedata.logo} alt="no stark" className="swornhouses" />
+                        {/* <img src={"http://localhost:3009/" + this.props.swornhousedata.logo} alt="no stark" className="swornhouses" /> */}
                     </Fade>
                 } />
                 {openDialog && (<>
@@ -109,7 +113,9 @@ class SwornHouse extends Component {
 
                             <Grid item xs={2} className='bn'>
                                 <Fade className="react-reveal" top >
-                                    <img src={"http://localhost:3009/" + this.props.swornhousedata.logo} alt="no stark" className="swornhouses_des" />
+                                <img src={`${API_URL}` + this.props.swornhousedata.logo} alt="no stark" className="swornhouses_des" />
+
+                                    {/* <img src={"http://localhost:3009/" + this.props.swornhousedata.logo} alt="no stark" className="swornhouses_des" /> */}
                                 </Fade>
                                 <Fade right>
                                     <p className="house_name">House</p>

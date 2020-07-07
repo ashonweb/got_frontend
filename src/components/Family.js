@@ -22,7 +22,9 @@ class Family extends Component {
         let location = window.location.pathname.split('/');
         let lastpath = location[location.length - 1]
         console.log(lastpath, "last")
-        await fetch('http://localhost:3009/characters/?house=' + lastpath, {
+        // await fetch('http://localhost:3009/characters/?house=' + lastpath, {
+            await fetch('https://protected-ridge-21819.herokuapp.com/characters/?house=' + lastpath, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

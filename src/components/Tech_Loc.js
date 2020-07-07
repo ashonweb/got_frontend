@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 import Locdetails from './Locdetails';
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 class Tech_Loc extends Component {
     constructor(props){
@@ -20,7 +21,9 @@ class Tech_Loc extends Component {
     async componentDidMount() {
 
         console.log("here inside handle characters")
-        await fetch('http://localhost:3009/walkers?type=loc', {
+        // await fetch('http://localhost:3009/walkers?type=loc', {
+            await fetch(`${API_URL}walkers?type=loc`, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

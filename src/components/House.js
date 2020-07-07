@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { withRouter } from 'react-router-dom';
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 class House extends Component {
     constructor(props) {
@@ -26,7 +27,9 @@ class House extends Component {
             <>
                 <Grid item xs={6} className={this.props.data.house}>
                     <Fade className="react-reveal" top >
-                        <img src={"http://localhost:3009/" + this.props.data.logo} alt="no stark" className="houses_image" />
+                    <img src={`${API_URL}` + this.props.data.logo} alt="no stark" className="houses_image" />
+
+                        {/* <img src={"http://localhost:3009/" + this.props.data.logo} alt="no stark" className="houses_image" /> */}
                     </Fade>
                     <Fade className="fade" right >
                         <h3>{this.props.data.house}</h3>

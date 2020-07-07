@@ -7,7 +7,24 @@ import Dialog from '@material-ui/core/Dialog';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import TextField from '@material-ui/core/TextField';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+const API_URL = process.env.REACT_APP_API_URL;
+console.log(API_URL)
 
+
+const styles = theme => ({
+    [theme.breakpoints.down('sm')]: {
+    item:{
+        padding:"0px !important",
+        margin:"0px 0px 12px !important"
+    },
+    dialogitem:{
+        maxWidth:"none !important"
+    }
+      },
+    
+  });
 class CrewMembers extends Component {
     constructor(props) {
         super(props)
@@ -40,7 +57,9 @@ class CrewMembers extends Component {
         })
         console.log("here inside handle characters")
         console.log(this.props.data.name,"this.props.data.name")
-        fetch('http://localhost:3009/characters?name=' + this.props.data.name , {
+        // fetch('http://localhost:3009/characters?name=' + this.props.data.name , {
+            fetch(`${API_URL}characters?name=` + this.props.data.name , {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -103,15 +122,19 @@ class CrewMembers extends Component {
         })
     }
     render() {
+        const { classes, theme } = this.props;
+
         const { firstseen, lastseen, father, mother, spouse, childern, sib, status, death, religion, culture, origin,alias,
             title, des, } = this.state
         // console.log(firstseen, lastseen, father, mother, spouse, childern, sib, status, death, religion, culture, origin,
         //     title, des, "fsfhsjfhsjfhsjhfjshfjsdjfhjsfjsdfh")
         return (
             <>
-                <Grid item xs={3} >
+                <Grid classes ={{item : classes.item,spacing:classes.spacing}}  item xs={3} >
                     <Fade className="react-reveal" top >
-                        <img src={"http://localhost:3009/" + this.props.data.characters} alt="sorry taking bit time" onClick={this.handlecharacters} className="charcterclassindialog" />
+                    <img src={`${API_URL}` + this.props.data.characters} alt="sorry taking bit time" onClick={this.handlecharacters} className="charcterclassindialog" />
+
+                        {/* <img src={"http://localhost:3009/" + this.props.data.characters} alt="sorry taking bit time" onClick={this.handlecharacters} className="charcterclassindialog" /> */}
                     </Fade>
                     <p className="charactername_nobelfamily" onClick={this.handlecharacters}>{this.props.data.name}</p>
                     <p className="realname_nobelfamily">{this.props.data.realname}</p>
@@ -130,9 +153,11 @@ class CrewMembers extends Component {
                             <Grid container spacing={3} className="grid_container_swornhouses">
                                 {/* <Fade left> */}
 
-                                <Grid item xs={6} >
+                                <Grid item xs={6} classes={{item:classes.dialogitem}} >
                                     <Fade className="react-reveal" top >
-                                        <img src={"http://localhost:3009/" + this.props.data.characters} alt="no stark" className="swornhouses_des" />
+                                    <img src={`${API_URL}` + this.props.data.characters} alt="no stark" className="swornhouses_des" />
+
+                                        {/* <img src={"http://localhost:3009/" + this.props.data.characters} alt="no stark" className="swornhouses_des" /> */}
                                     </Fade>
                                     <Fade right>
                                         {/* <p className="house_name">House</p> */}
@@ -347,5 +372,12 @@ class CrewMembers extends Component {
         )
     }
 }
+CrewMembers.propTypes = {
+    classes: PropTypes.object.isRequired,
+    theme: PropTypes.object.isRequired,
+  };
+  
+  export default withStyles(styles, { withTheme: true })(CrewMembers);
+  
 
-export default withRouter(CrewMembers)
+// export default withRouter(CrewMembers)

@@ -6,6 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import '../App.css';
 import SwornHouse from './SwornHouse';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 class NobleHouse extends Component {
@@ -23,7 +24,9 @@ class NobleHouse extends Component {
     }
 
     async componentDidMount() {
-        await fetch('http://localhost:3009/posts', {
+        // await fetch('http://localhost:3009/posts', {
+            await fetch(`${API_URL}posts`, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -39,7 +42,9 @@ class NobleHouse extends Component {
                 })
             })
 
-        await fetch('http://localhost:3009/swornhouse', {
+        // await fetch('http://localhost:3009/swornhouse', {
+            await fetch(`${API_URL}swornhouse`, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

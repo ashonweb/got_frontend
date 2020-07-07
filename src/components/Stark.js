@@ -3,6 +3,7 @@ import { Grid, TextField, } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 
@@ -38,7 +39,9 @@ class Stark extends Component {
         let location = window.location.pathname.split('/');
         let lastpath = location[location.length - 1]
         console.log(lastpath, "last")
-        await fetch('http://localhost:3009/posts/?house=' + lastpath, {
+        // await fetch('http://localhost:3009/posts/?house=' + lastpath, {
+            await fetch(`${API_URL}posts/?house=` + lastpath, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -64,7 +67,9 @@ class Stark extends Component {
         })
 
 
-        await fetch('http://localhost:3009/details/?house=' + lastpath, {
+        // await fetch('http://localhost:3009/details/?house=' + lastpath, {
+            await fetch(`${API_URL}details/?house=` + lastpath, {
+
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -119,7 +124,9 @@ class Stark extends Component {
             weapon,
             founder } = this.state;
         // console.log(this.state.place, "q")
-        const houseBackground = `http://localhost:3009/${place}`;
+        // const houseBackground = `http://localhost:3009/${place}`;
+        const houseBackground = `${API_URL}${place}`;
+
         // console.log(houseBackground)
 
         return (
