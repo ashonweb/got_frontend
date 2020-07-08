@@ -829,7 +829,7 @@ height: 45px;
 
 .quotes{
   text-align: center;
-    margin: 10px;
+    margin: 10px 0 0;
     /* font-family: auto; */
     font-weight: 100;
     font-family: 'Dancing Script', cursive !important;
@@ -1053,17 +1053,36 @@ height: 45px;
    border-image: linear-gradient(180deg,hsla(0,0%,0%,0) 0,#ffffff 51%,hsla(0,0%,0%,0)); 
      border-image-slice: 1;
 }
+.quotesp{
+  text-align: center;
+  margin: 0px 0 20px;
+  /* font-family: auto; */
+  /* font-size: 20px; */
+  font-weight: 100;
+  font-family: 'Dancing Script', cursive !important;
+}
 
+.main_content_category_mobile{
+  display: none !important;
+}
 
+.grid_container_swornhouses_mobile{
+  display: none !important
+}
 
+.grid_container_swornhouses_doth{
+    width: auto !important;
+    margin:0 !important;
+    z-index: 1 !important
+  
+}
 
+.grid_container_swornhouses_beyoond{
+  width: auto !important;
+  margin:0 !important;
+  z-index: 1 !important
 
-
-
-
-
-
-
+}
 
 
 
@@ -1221,6 +1240,172 @@ height: 45px;
 
 
 @media only screen and (max-width: 600px) {
+  .drawer {
+    display: block;
+    color: red;
+    position: absolute;
+    top: 1%;
+    left: 0%;
+}
+  .header {
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 0 0px 18px !important;
+    display: block;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  .arrow {
+    margin: -5px 5px !important;
+}
+  .MuiInputBase-input  {
+    width: 100% !important;
+    border-color: white !important;
+    color : white !important;
+    font-size: 15px;
+      font-weight: bold
+  }
+  .locname {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 5px;
+}
+  .locationd {
+    height: 75px;
+    width: 75px;
+    display: block;
+    margin: auto !important;
+  }
+  .grid_container_swornhouses_mobile{
+    display: flex !important
+    }
+  .directedby {
+    padding: 15px 12px !important;
+    font-size: 11px;
+    /* font-family: cursive; */
+    font-family: "jost";
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .maincontent {
+    /* margin: 10px 30px; */
+    margin: 0px 20px;
+}
+  .Family_container {
+    width: auto !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background: linear-gradient(186deg, black, transparent);
+    margin: 10px 0!important;
+}
+  .arrow_back {
+    width: 12px !important;
+    height: auto !important;
+    margin: 10px 0px 0 30px;
+}
+  .button_housedetails{
+    font-size: 11px !important;
+  }
+  .main_content_category{
+    display: none !important
+    
+  }
+  .main_content_category_mobile{
+    height: 45px;
+    /* width: 100%; */
+    background: white;
+    display: flex !important;
+    border: none;
+    width: auto !important;
+    margin: 0 !important;
+    justify-content: space-evenly;
+  }
+  .quotes{
+    text-align: center;
+      margin: 20px 0 0;
+      /* font-family: auto; */
+      font-size: 15px;
+      font-weight: 100;
+      font-family: 'Dancing Script', cursive !important;
+  }
+  .quotesp{
+    text-align: center;
+    margin: 0px 0 20px;
+    /* font-family: auto; */
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Dancing Script', cursive !important;
+  }
+  .main_content_stark_logo {
+    position: absolute;
+    top: auto;
+    bottom: 85%;
+    height: 78px !important;
+    width: 78px !important;
+    border-radius: 50% !important;
+    margin: 0 50px !important;
+  }
+  .Starkdetails_noble {
+    margin:75px 0 0;
+    height: 150px;
+    width: 100% !important;
+    background: rgb(19, 18, 25) !important;
+}
+.Lannisterdetails_noble {
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+}
+.Targaryendetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} .Baratheondetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} .Tullydetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} .Arryndetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} .Martelldetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} 
+.GreyJoydetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} 
+.Tyrelldetails_noble{
+  margin:75px 0 0;
+  height: 150px;
+  width: 100% !important;
+} 
+  .history_content {
+    font-size: small;
+    font-family: initial;
+}
+  .history_container {
+    width: auto !important;
+    /* background: black; */
+    /* background: linear-gradient(rgba(14, 1, 1, 0.5), rgba(0, 0, 0, 0.5)), url(./assests/winterfell.jpg); */
+    margin: 10px 0 !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    margin: 10px 0 !important;
+    display: block !important;
+}
   .shouse_exact_name {
     margin: 0 !important;
     font-family: 'Times New Roman', Times, serif;
@@ -1239,7 +1424,19 @@ height: 45px;
      float: none;
 }
   .grid_container_swornhouses{
+    display: none !important
+  }
+  .grid_container_swornhouses_doth{
     display: block !important
+  }
+  .grid_container_swornhouses_beyoond{
+    display: block !important;
+    transform: scaleY(-1);
+
+  }
+  .grid_container_swornhouses_beyond_item{
+    transform: scaleY(-1);
+    max-width: -webkit-fill-available !important;
   }
   .closedialog_char {
     width: 0px;
@@ -1249,7 +1446,7 @@ height: 45px;
     left: 90%;
     color: rgb(240, 98, 98) !important;
     cursor: pointer !important;
-    margin: 10px 0px !important;
+    margin: 25px 0px 0px !important;
   }
   .icon{
     color: rgb(240, 98, 98) !important;
@@ -1320,7 +1517,7 @@ height: 45px;
   .houses_image {
     text-align: center;
     width: 30%;
-    height: 91px;
+    height: 110px;
     top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -1393,7 +1590,7 @@ height: 45px;
   font-weight: 400;
   font-size: 12px;
   width: -webkit-fill-available;
-  margin:  0px;
+  margin:  20px 0px;
   /* margin-top: 35px; */
   cursor: pointer;
   border: none;
@@ -1417,13 +1614,7 @@ height: 45px;
 /* .header {
   text-align: right;
 } */
-.drawer {
-  display: inline;
-  color: red;
-    position: absolute;
-    top: 3%;
-    left: 1%;
-}
+
 .iconmenu {
   font-size: 45px;
     color: white;

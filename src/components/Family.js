@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
 import FamilyMembers from './FamilyMembers';
 import CrewMembers from './CrewMembers';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 class Family extends Component {
@@ -23,7 +24,7 @@ class Family extends Component {
         let lastpath = location[location.length - 1]
         console.log(lastpath, "last")
         // await fetch('http://localhost:3009/characters/?house=' + lastpath, {
-            await fetch('https://protected-ridge-21819.herokuapp.com/characters/?house=' + lastpath, {
+            await fetch(`${API_URL}characters/?house=` + lastpath, {
 
             headers: {
                 'Content-Type': 'application/json',

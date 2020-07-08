@@ -150,7 +150,7 @@ class CrewMembers extends Component {
                             <IconButton className="closedialog_char" color="inherit" onClick={this.handleClose} aria-label="Close">
                             <CloseIcon />
                         </IconButton>
-                            <Grid container spacing={3} className="grid_container_swornhouses">
+                            <Grid container spacing={3} className="grid_container_swornhouses_doth">
                                 {/* <Fade left> */}
 
                                 <Grid item xs={6} classes={{item:classes.dialogitem}} >

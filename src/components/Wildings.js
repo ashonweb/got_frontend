@@ -86,8 +86,8 @@ class Wildings extends Component {
         } = this.state
         return (
             <>
-                <Grid container spacing={3} className="grid_container_swornhouses">
-                    <Grid item xs={9} >
+                <Grid container spacing={3} className="grid_container_swornhouses_beyoond">
+                    <Grid item xs={9} className="grid_container_swornhouses_beyond_item" >
                     <Fade right>
                         <h1 className="header">The White Walkers</h1>
                                        <p className="walkerhistory">History</p>
@@ -100,7 +100,7 @@ class Wildings extends Component {
                                         <p className="char_des_walker">{weak}</p>
                                     </Fade>
                     </Grid>
-                    <Grid item xs={3} >
+                    <Grid item xs={3} className="grid_container_swornhouses_beyond_item" >
                         <Fade className="react-reveal" left >
                         <img src={`${API_URL}` + whitewalker} alt="no walker" className="beyondimages" />
 

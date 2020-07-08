@@ -204,6 +204,43 @@ class MainHouses extends Component {
                         </Grid>
                         
                     </Grid>
+                    <Grid container className="main_content_category_mobile" spacing={3}>
+                        
+                        <Grid item className="main_content_category_item" xs={2}>
+                            <Button component={Link} to={"/Noble_houses/House/" + house} class="button_housedetails" value="The Great Houses in Westero's" > <b>History</b></Button>
+
+                            {/* <button class="button_housedetails" value="The Great Houses in Westero's"><b> History</b></button> */}
+
+                        </Grid>  <Grid className="main_content_category_item" item xs={2}>
+                            <Button component={Link} to={"/Noble_houses/Family/" + house} class="button_housedetails" value="The Great Houses in Westero's" > <b>Family </b></Button>
+
+                            {/* <button class="button_housedetails" value="The Great Houses in Westero's"><b> Family Member</b></button> */}
+
+                        </Grid>  <Grid className="main_content_category_item" item xs={2}>
+                            <Button  component={Link} to={"/Noble_houses/Trivia/" + house} class="button_housedetails" value="The Great Houses in Westero's" > <b>Trivia</b></Button>
+
+                            {/* <button class="button_housedetails" value="The Great Houses in Westero's"><b> Trivia</b></button> */}
+
+                        </Grid>
+                        <Grid className="main_content_category_item" item xs={2}>
+                            <Button component={Link} to={"/Noble_houses/Friendandfoes/" + house} class="button_housedetails" value="The Great Houses in Westero's" activeStyle={{ background: "green", textDecoration: 'none' }} > <b>Friend_Foes</b></Button>
+                            {/* <NavLink to={"/Noble_houses/Friendandfoes/" + house} class="button_housedetails" style={{ color: 'black', textDecoration: 'none' }} activeStyle={{ background: "green", textDecoration: 'none' }} >behin</NavLink> */}
+
+                            {/* <button class="button_housedetails" value="The Great Houses in Westero's"><b> Friends & Foes</b></button> */}
+
+                        </Grid>
+                        <Grid className="main_content_category_item" item xs={2}>
+                        <Button  variant="contained"
+                        color="secondary" startIcon={<ArrowBackIosSharpIcon  className="arrow_back" />}
+ component={Link} to="/Noble_houses" style={{ color: 'red', textDecoration: 'none' }} class="button_housedetails" value="The Great Houses in Westero's" activeStyle={{ background: "green", textDecoration: 'none' }} ></Button>
+
+                            {/* <Button component={Link} to="/behind" class="button_housedetails" value="The Great Houses in Westero's" > <b>Behind Scenes</b></Button> */}
+                            {/* <NavLink to="/Noble_houses" style={{ color: 'red', textDecoration: 'none' }} activeStyle={{textDecoration: 'none' }} >back</NavLink> */}
+                            {/* <button class="button_housedetails" value="The Great Houses in Westero's"><b> Behind Scenes</b></button> */}
+
+                        </Grid>
+                        
+                    </Grid>
                 </Fade>
                 {/* <Fade className="react-reveal" right >
                 <Grid container className="history_container"  style={{ background: `linear-gradient(rgba(14, 1, 1, 0.5), rgba(0, 0, 0, 0.5)), url(${houseBackground})`}} spacing={3}>

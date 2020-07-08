@@ -2,10 +2,23 @@ import React, { Component } from 'react';
 import { Grid, TextField, } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
 import { withRouter } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 const API_URL = process.env.REACT_APP_API_URL;
 
-
+const styles = theme => ({
+    [theme.breakpoints.down('sm')]: {
+    item:{
+        padding:"0px !important",
+        margin:"0px 0px 12px !important",
+        maxWidth: "none"
+    },
+    dialogitem:{
+        maxWidth:"none !important"
+    }
+      },
+    
+  });
 
 class Stark extends Component {
     constructor(props) {
@@ -111,6 +124,8 @@ class Stark extends Component {
 
 
     render() {
+        const { classes, theme } = this.props;
+
         const {   title, description,
             place,
             background,
@@ -134,7 +149,7 @@ class Stark extends Component {
                   
                 <Grid container className="history_container"  style={{ background: `linear-gradient(rgba(14, 1, 1, 0.5), rgba(0, 0, 0, 0.5)), url(${houseBackground})`}} spacing={3}>
                     
-                    <Grid item className="item_history" xs={6}>
+                    <Grid item classes ={{item : classes.item,spacing:classes.spacing}} className="item_history" xs={6}>
                     <Fade className="react-reveal" right >
                         <div className="history_content">
                             {description}
@@ -146,10 +161,11 @@ class Stark extends Component {
                         </Fade>
 
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} classes ={{item : classes.item,spacing:classes.spacing}}>
                         
                         <TextField
 
+                                style={{width: "-webkit-fill-available"}}
                             id="outlined-read-only-input"
                             label="Seat"
                             value={seat}
@@ -163,6 +179,8 @@ class Stark extends Component {
                             
                         />
                         <TextField
+                                                        style={{width: "-webkit-fill-available"}}
+
 
                             id="outlined-read-only-input"
                             label="Sigil"
@@ -175,6 +193,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                                            style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Words"
@@ -188,6 +207,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Founder"
@@ -201,6 +221,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Lord"
@@ -212,6 +233,7 @@ class Stark extends Component {
                             }}
                             variant="outlined"
                         />  <TextField
+                        style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Region"
@@ -225,6 +247,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Titles"
@@ -237,6 +260,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Weapon"
@@ -249,6 +273,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Religion"
@@ -262,6 +287,7 @@ class Stark extends Component {
                             variant="outlined"
                         />
                         <TextField
+                                style={{width: "-webkit-fill-available"}}
 
                             id="outlined-read-only-input"
                             label="Alligence"
@@ -282,4 +308,12 @@ class Stark extends Component {
     }
 }
 
-export default withRouter(Stark)
+Stark.propTypes = {
+    classes: PropTypes.object.isRequired,
+    theme: PropTypes.object.isRequired,
+  };
+  
+  export default withStyles(styles, { withTheme: true })(Stark);
+  
+
+// export default withRouter(Stark)

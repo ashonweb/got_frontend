@@ -105,7 +105,7 @@ class SwornHouse extends Component {
                         {/* <IconButton className="closedialog" color="inherit" onClick={this.handleClose} aria-label="Close">
                             <CloseIcon />
                         </IconButton> */}
-                        <Grid  container spacing={3} className="grid_container_swornhouses">
+                        <Grid  container spacing={3} className="grid_container_swornhouses_doth">
                             {/* <Fade left> */}
                             <IconButton className="closedialog" color="inherit" onClick={this.handleClose} aria-label="Close">
                                 <CloseIcon />
@@ -125,7 +125,7 @@ class SwornHouse extends Component {
                             </Grid>
                             <Grid item xs={5}  className='houses'>
                                 <TextField
-
+                                    style={{display:"block"}}
                                     id="outlined-read-only-input"
                                     label="Sigil"
                                     defaultValue={this.props.swornhousedata.sigil}
@@ -138,6 +138,7 @@ class SwornHouse extends Component {
                                     variant="outlined"
                                 />
                                 <TextField
+                                                                            style={{display:"block"}}
 
                                     id="outlined-read-only-input"
                                     label="Lord"
@@ -151,6 +152,7 @@ class SwornHouse extends Component {
                                     variant="outlined"
                                 />
                                 <TextField
+                                    style={{display:"block"}}
 
                                     id="outlined-read-only-input"
                                     label="Seat"
@@ -164,6 +166,7 @@ class SwornHouse extends Component {
                                     variant="outlined"
                                 />
                                 <TextField
+                                    style={{display:"block"}}
 
                                     id="outlined-read-only-input"
                                     label="Region"
@@ -178,6 +181,7 @@ class SwornHouse extends Component {
                                 />
 
                                 <TextField
+                                                                    style={{display:"block"}}
 
                                     id="outlined-read-only-input"
                                     label="Title"

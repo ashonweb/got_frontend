@@ -107,7 +107,7 @@ class SwipeQuotedHouse extends React.Component {
                        <div key={step.label}>
                             {Math.abs(activeStep - index) <= 2 ? (
                                 <>
-                                    <h2 className="quotes">{step}</h2>
+                                    <h2 className="quotesp">{step}</h2>
                                     {/* <p className="quotesauthor">{step.qa}</p> */}
                                 </>) : null}
                         </div>

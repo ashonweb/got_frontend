@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import FamilyMembers from './FamilyMembers';
 import CrewMembers from './CrewMembers';
 import Triviadetils from './Triviadetils';
+const API_URL = process.env.REACT_APP_API_URL;
 
 
 class Trivia extends Component {
@@ -24,7 +25,7 @@ class Trivia extends Component {
         let lastpath = location[location.length - 1]
         console.log(lastpath, "last")
         // await fetch('http://localhost:3009/trivia/?house=' + lastpath, {
-            await fetch('https://protected-ridge-21819.herokuapp.com/trivia/?house=' + lastpath, {
+            await fetch(`${API_URL}trivia/?house=` + lastpath, {
 
             headers: {
                 'Content-Type': 'application/json',

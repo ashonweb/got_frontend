@@ -85,8 +85,8 @@ class Unsullied extends Component {
         } = this.state
         return (
             <>
-                <Grid container spacing={3} className="grid_container_swornhouses">
-                    <Grid item xs={9} >
+                <Grid container spacing={3} className="grid_container_swornhouses_beyoond">
+                    <Grid item xs={9} className="grid_container_swornhouses_beyond_item" >
                     <Fade right>
                     <h1 className="header">The Unsullied</h1>
 
@@ -97,7 +97,7 @@ class Unsullied extends Component {
                                        
                                     </Fade>
                     </Grid>
-                    <Grid item xs={3} >
+                    <Grid item xs={3} className="grid_container_swornhouses_beyond_item" >
                         <Fade className="react-reveal" left >
                         <img src={`${API_URL}` + whitewalker} alt="no walker" className="beyondimages" />
 
