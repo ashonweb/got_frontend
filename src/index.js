@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   
 } from "react-router-dom";
 
