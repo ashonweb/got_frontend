@@ -68,6 +68,7 @@ class SwipeQuotedHouse extends React.Component {
 
     render() {
         const { classes, theme, q,qa } = this.props;
+        console.log(q,qa,"ffsfsfsdf")
         const { activeStep } = this.state;
         // const maxSteps = tutorialSteps.length;
 

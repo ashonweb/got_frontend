@@ -49,9 +49,15 @@ class Stark extends Component {
 
 
     async componentDidMount() {
+        // let location = window.location.pathname.split('/');
+        // let lastpath = location[location.length - 1]
+        // console.log(lastpath, "last")
         let location = window.location.pathname.split('/');
-        let lastpath = location[location.length - 1]
-        console.log(lastpath, "last")
+        console.log(location)
+       var href = window.location.href;
+        console.log(href,"href")
+    console.log(href.match(/([^\/]*)\/*$/)[1],"rtyupoxcvbnl");
+   let lastpath = (href.match(/([^\/]*)\/*$/)[1]);
         // await fetch('http://localhost:3009/posts/?house=' + lastpath, {
             await fetch(`${API_URL}posts/?house=` + lastpath, {
 
@@ -98,7 +104,7 @@ class Stark extends Component {
                 }, () => {
                     const { titles, place,description, background, sigil, words, seat, region, lord, swornto, religion, weapon, founder } = this.state.detailsdata
                     var place_replace = place.replace(/\\/g, "/");
-                    console.log(place_replace);
+                    console.log(place_replace,"placereplace");
                     this.setState({
                         title: titles,
                         description,

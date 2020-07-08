@@ -46,7 +46,12 @@ class MainHouses extends Component {
 
     async componentDidMount() {
         let location = window.location.pathname.split('/');
-        let lastpath = location[location.length - 1]
+         console.log(location)
+        var href = window.location.href;
+         console.log(href,"href")
+     console.log(href.match(/([^\/]*)\/*$/)[1],"rtyupoxcvbnl");
+    let lastpath = (href.match(/([^\/]*)\/*$/)[1]);
+    // let lastpath = location[location.length - 1]
         console.log(lastpath, "last")
         this.setState({
             housesdis:lastpath,
@@ -65,6 +70,7 @@ class MainHouses extends Component {
         })
        
         // await fetch('http://localhost:3009/posts/?house=' + lastpath, {
+            console.log(`${API_URL}posts/?house=` + lastpath,"ddfdfdfdfdfdf")
             await fetch(`${API_URL}posts/?house=` + lastpath, {
 
             headers: {
